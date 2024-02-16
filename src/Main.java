@@ -5,6 +5,7 @@ public class Main {
 
         Float retorno = Calculadora.calc(Entrada.entrada_ventana_consola_float("Tecle el primer numero",Entrada.VENTANA),Entrada.entrada_ventana_consola_float("Tecle el primer numero",Entrada.VENTANA),Calculadora.SUMA);
 
+        //Comprobacion del retorno
         if(retorno == null){
             Salida.salida_ventana_consola("Algo fallo",Salida.CONSOLA);
         }else{
