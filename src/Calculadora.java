@@ -1,9 +1,10 @@
+import javax.swing.*;
 
 public class Calculadora {
     /**
      * Opcion de suma
      */
-    public final static Integer SUMA = 1;
+    public static final Integer SUMA = 1;
     /**
      * Opcion de resta
      */
@@ -24,26 +25,48 @@ public class Calculadora {
      * @param opt opcion de operacion
      * @return resultado de la operacion
      */
-    public static float calc(float n1,float n2,int opt){
+    public static Float calc(float n1,float n2,int opt){
 
-        if (opt == SUMA){
+        Float resultado = 0.0f;
 
-            return n1+n2;
+        switch(opt){
 
-        }else if (opt == RESTA){
+            //Suma
+            case 1:
 
-            return n1-n2;
+                resultado = n1+n2;
+                break;
 
-        }else if (opt == MULTIPLICACION){
+            //Resta
+            case 2:
 
-            return n1*n2;
+                resultado = n1-n2;
+                break;
 
-        }else if (opt == DIVISION){
+            //Multiplicacion
+            case 3:
 
-            return n1/n2;
+                resultado = n1*n2;
+                break;
+
+            //Division
+            case 4:
+
+                try {
+                    resultado = n1 / n2;
+                }catch (ArithmeticException e){
+                    JOptionPane.showMessageDialog(null,"No se puede dividir por cero");
+                }finally{
+                    break;
+                }
+
+            default:
+
+                resultado = null;
 
         }
-        return 0;
+
+        return resultado;
 
     }
 
