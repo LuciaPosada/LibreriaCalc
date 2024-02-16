@@ -4,19 +4,19 @@ public class Calculadora {
     /**
      * Opcion de suma
      */
-    public static final Integer SUMA = 1;
+    public static final int SUMA = 1;
     /**
      * Opcion de resta
      */
-    public final static Integer RESTA = 2;
+    public final static int RESTA = 2;
     /**
      * Opcion de multiplicacion
      */
-    public final static Integer MULTIPLICACION = 3;
+    public final static int MULTIPLICACION = 3;
     /**
      * Opcion de division
      */
-    public final static Integer DIVISION = 4;
+    public final static int DIVISION = 4;
 
     /**
      * Metodo que permite la eleccion de operacion (suma,resta,multiplicacion,division) entre dos float
@@ -32,25 +32,25 @@ public class Calculadora {
         switch(opt){
 
             //Suma
-            case 1:
+            case SUMA:
 
                 resultado = n1+n2;
                 break;
 
             //Resta
-            case 2:
+            case RESTA:
 
                 resultado = n1-n2;
                 break;
 
             //Multiplicacion
-            case 3:
+            case MULTIPLICACION:
 
                 resultado = n1*n2;
                 break;
 
             //Division
-            case 4:
+            case DIVISION:
 
                 try {
                     resultado = n1 / n2;
