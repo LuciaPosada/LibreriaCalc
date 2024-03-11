@@ -17,9 +17,13 @@ public class Calculadora {
      * Opcion de division
      */
     public final static int DIVISION = 4;
+    /**
+     * Opcion de raiz (cuadrada/cubica)
+     */
+    public final static int RAIZ = 5;
 
     /**
-     * Metodo que permite la eleccion de operacion (suma,resta,multiplicacion,division) entre dos float
+     * Metodo que permite la eleccion de operacion (suma,resta,multiplicacion,division,raiz) entre dos float
      * @param n1 numero float
      * @param n2 numero float
      * @param opt opcion de operacion
@@ -59,6 +63,11 @@ public class Calculadora {
                 }finally{
                     break;
                 }
+
+            //RAIZ
+            case RAIZ:
+                resultado = (float) Math.pow(n1, 1 / n2);
+                break;
 
             default:
 
