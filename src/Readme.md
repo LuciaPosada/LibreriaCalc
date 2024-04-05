@@ -1,7 +1,9 @@
+## Explicacion de programa
+
 Este programa consta de una clase Calculadora:
 
  - Tiene cuatro constantes correspondientes a operaciones (suma/resta/multiplicacion/division)
- - Un metodo calc() que recibe dos numeros y una opcion de operacion, segun la cual ejecuta una de las ya mencionadas operaciones
+ - Un metodo calc() que recibe dos numeros y una opcion, segun la cual ejecuta una de las ya mencionadas operaciones
 
 Tambien tiene una clase main para comprobar el funcionamiento del programa:
 
@@ -52,3 +54,5 @@ Tambien tiene una clase main para comprobar el funcionamiento del programa:
 - Realizamos un merge squash (situandonos primero en la rama main)
 - Realizamos un jar:
   - File -> Project Structure -> Artifact -> JAR -> From modules with dependencies... -> Main CLass (ninguna/dejar vacio)
+- Creamos un tag apartir del commit del merge
+- Realizamos una release con el .jar
