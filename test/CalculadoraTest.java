@@ -74,7 +74,12 @@ public class CalculadoraTest {
     //RAIZ
 
     @Test
-    public void comprobacionRaiz(){
+    public void comprobacionRaizCuadrada(){
         Assertions.assertEquals(3,Calculadora.calc(9,2,Calculadora.RAIZ));
+    }
+
+    @Test
+    public void comprobacionRaizCubica(){
+        Assertions.assertEquals(4,Calculadora.calc(64,3,Calculadora.RAIZ));
     }
 }
